@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Smoki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h2>Poznaj smoki!</h2>
+    </header>
+
+    <section id="ojciec">
+        <nav>
+            <section onclick="zmiana1()" id="blok1">Baza</section>
+            <section onclick="zmiana2()" id="blok2">Opisy</section>
+            <section onclick="zmiana3()" id="blok3">Galerai</section>
+        </nav>
+
+        <main>
+                <section id="sekcja1">
+                    <h3>Baza Smoków</h3>
+
+                    <form method="POST">
+                        <select name="" id="">
+                            <option value="">Bułgaria</option>
+                            <option value="">Chiny</option>
+                            <option value="">Francja</option>
+                            <option value="">Japonia</option>
+                            <option value="">Polska</option>
+                        </select>
+                        <input type="button" name="" id="" value="Szukaj">
+                    </form>
+
+                        <table>
+                            <tr>
+                                <th>Nazwa</th>
+                                <th>Długość</th>
+                                <th>Szerokość</th>
+                            </tr>
+                            <tr>
+                                <td>Nobik</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Rafał zielony</td>
+                                <td>6</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Rafał złoty</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Luiza złota</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Francuski pan</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Zielony</td>
+                                <td>5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Czerwony</td>
+                                <td>8</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Błękitny</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Luiza srebrna</td>
+                                <td>7</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Francuski pogromca</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+
+                </section>
+                <section id="sekcja2">
+                    <h3>Opisy smoków</h3>
+
+                    <dl>
+                        <dt>Smok czerwony</dt>
+                        <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
+
+                        <dt>Smok zielony</dt>
+                        <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym. Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
+
+                        <dt>Smok niebieski</dt>
+                        <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy. Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie lubi się przepracowywać.</dd>
+                    </dl>
+                </section>
+                <section id="sekcja3">
+                    <h3>Galeria</h3>
+                    <img src="smok1.JPG" alt="Smok czerwony">
+                    <img src="smok2.JPG" alt="Smok wielki">
+                    <img src="smok3.JPG" alt="Skrzydlaty łaciaty">
+                </section>
+        </main>
+    </section>
+
+    <footer>
+        <p>Strone opracował : KOnrad</p>
+    </footer>
+
+
+    <script>
+        function zmiana1() {
+                document.getElementById("blok1").style.backgroundColor="MistyRose";
+                document.getElementById("blok2").style.backgroundColor="#FFAEA5";
+                document.getElementById("blok3").style.backgroundColor="#FFAEA5";
+
+                
+                document.getElementById("sekcja1").style.display="block"
+                document.getElementById("sekcja2").style.display="none"
+                document.getElementById("sekcja3").style.display="none"
+        }
+        function zmiana2() {
+                 document.getElementById("blok2").style.backgroundColor="MistyRose";
+                document.getElementById("blok1").style.backgroundColor="#FFAEA5";
+                document.getElementById("blok3").style.backgroundColor="#FFAEA5";
+
+                
+                document.getElementById("sekcja2").style.display="block"
+                document.getElementById("sekcja1").style.display="none"
+                document.getElementById("sekcja3").style.display="none"
+        }
+        function zmiana3() {
+            document.getElementById("blok3").style.backgroundColor="MistyRose";
+                document.getElementById("blok2").style.backgroundColor="#FFAEA5";
+                document.getElementById("blok1").style.backgroundColor="#FFAEA5";
+
+                
+                document.getElementById("sekcja3").style.display="block"
+                document.getElementById("sekcja2").style.display="none"
+                document.getElementById("sekcja1").style.display="none"
+        }
+    </script>
+</body>
+</html>
